@@ -1,0 +1,5 @@
+/index
+获取首页
+
+/index?demand=salt
+获取登陆 salt 和 rsa 密钥

@@ -1,0 +1,35 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+	<display-name>Archetype Created Web Application</display-name>
+
+	<welcome-file-list>
+		<welcome-file>/index.html</welcome-file>
+	</welcome-file-list>
+
+	<error-page>
+		<error-code>404</error-code>
+		<location>/404.html</location>
+	</error-page>
+
+	<servlet>
+		<servlet-name>index</servlet-name>
+		<servlet-class>me.web.files.servlet.Index</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>index</servlet-name>
+		<url-pattern>/index</url-pattern>
+	</servlet-mapping>
+
+	<filter>
+		<filter-name>encoding</filter-name>
+		<filter-class>me.web.files.filter.Encoding</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>encoding</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+</web-app>
