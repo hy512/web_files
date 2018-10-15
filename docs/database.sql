@@ -2,7 +2,7 @@
 
 create database web_files;
 
-// 表示用户基本信息
+-- 表示用户基本信息
 create  table o_user (
     id unsigned int auto_increment primary key, // id
     key char(6) not null qu, // 用于认证
@@ -11,7 +11,7 @@ create  table o_user (
     regt datetime not null // 注册时间
 )
 
-// 用户访问信息
+-- 用户访问信息
 create table u_visit (
     last datetime not null, // 最后访问时间
     userid unsigned int re o_user.id
